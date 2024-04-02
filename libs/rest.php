@@ -3,6 +3,7 @@
 function get_rest_query_for_post_type($post_type)
 {
     $args = [
+        'post_status' => 'publish',
         'post_type' => $post_type,
         'posts_per_page' => -1, // Gibt alle Beiträge zurück
     ];
