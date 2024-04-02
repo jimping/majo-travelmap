@@ -11,5 +11,5 @@ add_action('rest_api_init', function () {
 
 function get_travelmap_posts($request)
 {
-    return get_rest_query_for_post_type('post');
+    return get_rest_query_for_post_type('post', $request);
 }

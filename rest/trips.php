@@ -8,7 +8,7 @@ add_action('rest_api_init', function () {
     ));
 });
 
-function get_trips($data)
+function get_trips($request)
 {
-    return get_rest_query_for_post_type('trip');
+    return get_rest_query_for_post_type('trip', $request);
 }

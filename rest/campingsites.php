@@ -8,8 +8,8 @@ add_action('rest_api_init', function () {
     ));
 });
 
-function get_campingsites($data)
+function get_campingsites($request)
 {
-    return get_rest_query_for_post_type('campingsite');
+    return get_rest_query_for_post_type('campingsite', $request);
 
 }

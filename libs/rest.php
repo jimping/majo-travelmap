@@ -1,13 +1,30 @@
 <?php
 
-function get_rest_query_for_post_type($post_type)
+function get_rest_query_for_post_type($post_type, $request)
 {
+    $with_locations = $request->get_param('with_locations');
+    $with_content = $request->get_param('with_content');
+
     $args = [
         'post_status' => 'publish',
         'post_type' => $post_type,
         'posts_per_page' => -1, // Gibt alle Beiträge zurück
     ];
+
+    // Überprüfen, ob with_locations=1 gesetzt ist und die Abfrage dementsprechend anpassen
+    if (!empty($with_locations) && $with_locations == 1) {
+        $args['tax_query'] = array(
+            array(
+                'taxonomy' => 'location',
+                'field'    => 'term_id',
+                'terms'    => 'NOT EMPTY', // Holt Beiträge, die in der Taxonomie 'location' Begriffe haben
+                'operator' => 'EXISTS' // Stellt sicher, dass die Beiträge Begriffe in dieser Taxonomie haben
+            ),
+        );
+    }
+
     $posts = get_posts($args);
+
     $data = array();
 
     foreach ($posts as $post) {
@@ -25,19 +42,23 @@ function get_rest_query_for_post_type($post_type)
             return $location;
         }, $locations);
 
-        $blocks = parse_blocks($post->post_content);
-
-        $data[] = array(
+        $entry = array(
             'id' => $post->ID,
             'teaser' => get_the_excerpt($post->ID),
             'title' => $post->post_title,
-            'content' => $post->post_content,
             'image' => $image,
-            'blocks' => $blocks,
             'locations' => $locations_data,
-            'categories' => wp_get_post_categories($post->ID),
-            'tags' => wp_get_post_tags($post->ID),
         );
+
+        if (!empty($with_content) && $with_content == 1) {
+            $entry['content'] = apply_filters('the_content', $post->post_content);
+            $entry['blocks'] = parse_blocks($post->post_content);
+            $entry['categories'] = wp_get_post_categories($post->ID);
+            $entry['tags'] = wp_get_post_tags($post->ID);
+        }
+
+        $data[] = $entry;
+
     }
 
     return new WP_REST_Response($data, 200);
