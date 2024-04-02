@@ -10,10 +10,11 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-04-02 10:10+0000\n"
+"POT-Creation-Date: 2024-04-02 04:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: travelmap\n"
+"\n"
 "Language: \n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;"
 
@@ -110,11 +111,11 @@ msgid "Add New"
 msgstr ""
 
 #: post-types/campingsites.php:28
-msgid "Add New Campingsite"
+msgid "Add New Campingsites"
 msgstr ""
 
 #: post-types/trips.php:28
-msgid "Add New Trip"
+msgid "Add New Trips"
 msgstr ""
 
 #: post-types/campingsites.php:14
@@ -129,11 +130,8 @@ msgstr ""
 msgid "Alle Orte"
 msgstr ""
 
-#: post-types/campingsites.php:13
-msgid "Campingsite"
-msgstr ""
-
-#: post-types/campingsites.php:12 post-types/campingsites.php:36
+#: post-types/campingsites.php:12 post-types/campingsites.php:13
+#: post-types/campingsites.php:36
 msgid "Campingsites"
 msgstr ""
 
@@ -233,11 +231,11 @@ msgid "Custom field updated."
 msgstr ""
 
 #: post-types/campingsites.php:29
-msgid "Edit Campingsite"
+msgid "Edit Campingsites"
 msgstr ""
 
 #: post-types/trips.php:29
-msgid "Edit Trip"
+msgid "Edit Trips"
 msgstr ""
 
 #: post-types/campingsites.php:23
@@ -246,10 +244,6 @@ msgstr ""
 
 #: post-types/trips.php:23
 msgid "Filter Trips list"
-msgstr ""
-
-#: libs/config.php:26
-msgid "Google API Key"
 msgstr ""
 
 #. URI of the plugin
@@ -265,11 +259,11 @@ msgstr ""
 msgid "Insert into Trips"
 msgstr ""
 
-#: taxonomies/locations.php:62 taxonomies/locations.php:111
+#: taxonomies/categories.php:28 taxonomies/categories.php:77
 msgid "Latitude"
 msgstr ""
 
-#: taxonomies/locations.php:66 taxonomies/locations.php:115
+#: taxonomies/categories.php:32 taxonomies/categories.php:81
 msgid "Longitude"
 msgstr ""
 
@@ -281,7 +275,7 @@ msgstr ""
 msgid "Majo"
 msgstr ""
 
-#: taxonomies/locations.php:52 taxonomies/locations.php:93
+#: taxonomies/categories.php:18 taxonomies/categories.php:59
 msgid "Map"
 msgstr ""
 
@@ -294,11 +288,11 @@ msgid "Neuer Ortsname"
 msgstr ""
 
 #: post-types/campingsites.php:26
-msgid "New Campingsite"
+msgid "New Campingsites"
 msgstr ""
 
 #: post-types/trips.php:26
-msgid "New Trip"
+msgid "New Trips"
 msgstr ""
 
 #: post-types/campingsites.php:33
@@ -334,11 +328,11 @@ msgid "Orte suchen"
 msgstr ""
 
 #: post-types/campingsites.php:35
-msgid "Parent Campingsite:"
+msgid "Parent Campingsites:"
 msgstr ""
 
 #: post-types/trips.php:35
-msgid "Parent Trip:"
+msgid "Parent Trips:"
 msgstr ""
 
 #: post-types/campingsites.php:32
@@ -363,24 +357,11 @@ msgctxt "taxonomy singular name"
 msgid "Ort"
 msgstr ""
 
-#. Seitentitel
-#: libs/config.php:9
-msgid "TravelMap"
-msgstr ""
-
 #. Name of the plugin
 msgid "Travelmap Connector"
 msgstr ""
 
-#: libs/config.php:8 libs/config.php:20
-msgid "TravelMap Settings"
-msgstr ""
-
-#: post-types/trips.php:13
-msgid "Trip"
-msgstr ""
-
-#: post-types/trips.php:12 post-types/trips.php:36
+#: post-types/trips.php:12 post-types/trips.php:13 post-types/trips.php:36
 msgid "Trips"
 msgstr ""
 
@@ -467,26 +448,18 @@ msgid "Trips updated. <a target=\"_blank\" href=\"%s\">View Trips</a>"
 msgstr ""
 
 #: post-types/campingsites.php:18
-msgid "Uploaded to this Campingsite"
+msgid "Uploaded to this Campingsites"
 msgstr ""
 
 #: post-types/trips.php:18
-msgid "Uploaded to this Trip"
+msgid "Uploaded to this Trips"
 msgstr ""
 
-#: post-types/campingsites.php:30
-msgid "View Campingsite"
-msgstr ""
-
-#: post-types/campingsites.php:31
+#: post-types/campingsites.php:30 post-types/campingsites.php:31
 msgid "View Campingsites"
 msgstr ""
 
-#: post-types/trips.php:30
-msgid "View Trip"
-msgstr ""
-
-#: post-types/trips.php:31
+#: post-types/trips.php:30 post-types/trips.php:31
 msgid "View Trips"
 msgstr ""
 

@@ -206,7 +206,7 @@ function delete_lat_lng_fields($term_id, $tt_id)
 
 function get_lat_lng_from_term($ort_name)
 {
-    $url = 'https://maps.googleapis.com/maps/api/geocode/json?address=' . urlencode($ort_name) . '&key=' . TRAVELMAP_GOOGLE_MAPS_API_KEY;
+    $url = 'https://maps.googleapis.com/maps/api/geocode/json?address=' . urlencode($ort_name) . '&key=' . get_option('travelmap_google_api_key');
 
     $response = wp_remote_get($url);
     if (is_wp_error($response)) {
@@ -227,7 +227,7 @@ function get_lat_lng_from_term($ort_name)
 
 function get_place_details($place_id)
 {
-    $url = 'https://maps.googleapis.com/maps/api/place/details/json?place_id=' . $place_id . '&key=' . TRAVELMAP_GOOGLE_MAPS_API_KEY;
+    $url = 'https://maps.googleapis.com/maps/api/place/details/json?place_id=' . $place_id . '&key=' . get_option('travelmap_google_api_key');
 
 
     $response = wp_remote_get($url);

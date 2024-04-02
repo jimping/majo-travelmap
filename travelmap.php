@@ -1,23 +1,29 @@
 <?php
 /**
- * Plugin Name:     Travelmap Connector
+ * Plugin Name:     TravelMap Connector
  * Plugin URI:      https://splintnet.de
- * Description:     Majo
+ * Description:     Connector for TravelMap
  * Author:          splintnet
  * Author URI:      https://splintnet.de
  * Text Domain:     travelmap
  * Domain Path:     /languages
- * Version:         0.1.0
+ * Version:         3.0.0
  *
  * @package         Travelmap
  */
 
 // Your code starts here.
 
-define('TRAVELMAP_GOOGLE_MAPS_API_KEY', 'AIzaSyBMeRMnBG6oMZv0Hl_9VZI5QXN4_O65rCk');
+// load languages
+add_action('plugins_loaded', 'travelmap_load_textdomain');
+function travelmap_load_textdomain()
+{
+    load_plugin_textdomain('travelmap', false, dirname(plugin_basename(__FILE__)) . '/languages');
+}
 
 
 require('libs/rest.php');
+require('libs/config.php');
 
 
 require('post-types/trips.php');
@@ -31,10 +37,3 @@ require('rest/posts.php');
 
 
 require('taxonomies/locations.php');
-
-// load languages
-add_action('plugins_loaded', 'travelmap_load_textdomain');
-function travelmap_load_textdomain()
-{
-    load_plugin_textdomain('travelmap', false, dirname(plugin_basename(__FILE__)) . '/languages');
-}
