@@ -29,8 +29,14 @@ function get_rest_query_for_post_type($post_type, $request)
 
     foreach ($posts as $post) {
         $post_meta = get_post_meta($post->ID);
-        $image = get_the_post_thumbnail_url($post->ID, 'full');
         $locations = wp_get_post_terms($post->ID, 'location', array('fields' => 'all'));
+
+        $allThumbnailSizes = get_intermediate_image_sizes();
+        $thumbnailSizes = ['full' => get_the_post_thumbnail_url($post->ID, 'full')];
+
+        foreach ($allThumbnailSizes as $size) {
+            $thumbnailSizes[$size] = get_the_post_thumbnail_url($post->ID, $size);
+        }
 
         $locations_data = array_map(function ($location) {
             $meta = get_term_meta($location->term_id);
@@ -44,9 +50,10 @@ function get_rest_query_for_post_type($post_type, $request)
 
         $entry = array(
             'id' => $post->ID,
+            'link' => get_permalink($post->ID),
             'teaser' => get_the_excerpt($post->ID),
             'title' => $post->post_title,
-            'image' => $image,
+            'image' => $thumbnailSizes,
             'locations' => $locations_data,
         );
 
