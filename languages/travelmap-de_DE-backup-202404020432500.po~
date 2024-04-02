@@ -1,0 +1,485 @@
+# Copyright (C) 2024 splintnet
+# This file is distributed under the same license as the Travelmap Connector plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Travelmap Connector 0.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/travelmap\n"
+"Last-Translator: \n"
+"Language-Team: Deutsch\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-04-01T07:26:55+00:00\n"
+"PO-Revision-Date: 2024-04-02 04:32+0000\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Domain: travelmap\n"
+"Language: de_DE\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Loco-Version: 2.6.7; wp-6.4.3"
+
+#. %s: Number of Campingsites.
+#: post-types/campingsites.php:123
+#, php-format
+msgid "%s Campingsites moved to the Trash."
+msgid_plural "%s Campingsites moved to the Trash."
+msgstr[0] "%s Campingsites in den Papierkorb verschoben."
+msgstr[1] "%s Campingsites in den Papierkorb verschoben."
+
+#. %s: Number of Campingsites.
+#: post-types/campingsites.php:119
+#, php-format
+msgid "%s Campingsites not updated, somebody is editing it."
+msgid_plural "%s Campingsites not updated, somebody is editing them."
+msgstr[0] "%s Campingsites nicht aktualisiert, jemand bearbeitet sie gerade."
+msgstr[1] "%s Campingsites nicht aktualisiert, jemand bearbeitet sie gerade."
+
+#. %s: Number of Campingsites.
+#: post-types/campingsites.php:121
+#, php-format
+msgid "%s Campingsites permanently deleted."
+msgid_plural "%s Campingsites permanently deleted."
+msgstr[0] "%s Campingsites dauerhaft gelöscht."
+msgstr[1] "%s Campingsites dauerhaft gelöscht."
+
+#. %s: Number of Campingsites.
+#: post-types/campingsites.php:125
+#, php-format
+msgid "%s Campingsites restored from the Trash."
+msgid_plural "%s Campingsites restored from the Trash."
+msgstr[0] "%s Campingsites aus dem Papierkorb wiederhergestellt."
+msgstr[1] "%s Campingsites aus dem Papierkorb wiederhergestellt."
+
+#. %s: Number of Campingsites.
+#: post-types/campingsites.php:116
+#, php-format
+msgid "%s Campingsites updated."
+msgid_plural "%s Campingsites updated."
+msgstr[0] "%s Campingsites aktualisiert."
+msgstr[1] "%s Campingsites aktualisiert."
+
+#. %s: Number of Trips.
+#: post-types/trips.php:123
+#, php-format
+msgid "%s Trips moved to the Trash."
+msgid_plural "%s Trips moved to the Trash."
+msgstr[0] "%s Trips wurden in den Papierkorb verschoben."
+msgstr[1] "%s Trips wurden in den Papierkorb verschoben."
+
+#. %s: Number of Trips.
+#: post-types/trips.php:119
+#, php-format
+msgid "%s Trips not updated, somebody is editing it."
+msgid_plural "%s Trips not updated, somebody is editing them."
+msgstr[0] "%s Trips nicht aktualisiert, jemand bearbeitet sie gerade."
+msgstr[1] "%s Trips nicht aktualisiert, jemand bearbeitet sie gerade."
+
+#. %s: Number of Trips.
+#: post-types/trips.php:121
+#, php-format
+msgid "%s Trips permanently deleted."
+msgid_plural "%s Trips permanently deleted."
+msgstr[0] "%s Trips dauerhaft gelöscht."
+msgstr[1] "%s Trips dauerhaft gelöscht."
+
+#. %s: Number of Trips.
+#: post-types/trips.php:125
+#, php-format
+msgid "%s Trips restored from the Trash."
+msgid_plural "%s Trips restored from the Trash."
+msgstr[0] "%s Trips aus dem Papierkorb wiederhergestellt."
+msgstr[1] "%s Trips aus dem Papierkorb wiederhergestellt."
+
+#. %s: Number of Trips.
+#: post-types/trips.php:116
+#, php-format
+msgid "%s Trips updated."
+msgid_plural "%s Trips updated."
+msgstr[0] "%s Trips aktualisiert."
+msgstr[1] "%s Trips aktualisiert."
+
+#: post-types/campingsites.php:117
+msgid "1 Campingsites not updated, somebody is editing it."
+msgstr "1 Campingsites nicht aktualisiert, jemand bearbeitet sie gerade."
+
+#: post-types/trips.php:117
+msgid "1 Trips not updated, somebody is editing it."
+msgstr "1 Trips nicht aktualisiert, jemand bearbeitet sie."
+
+#: post-types/trips.php:27 post-types/campingsites.php:27
+msgid "Add New"
+msgstr "Neu hinzufügen"
+
+#: post-types/campingsites.php:28
+msgid "Add New Campingsites"
+msgstr "Neue Campingplätze hinzufügen"
+
+#: post-types/trips.php:28
+msgid "Add New Trips"
+msgstr "Neue Trips hinzufügen"
+
+#: post-types/campingsites.php:14
+msgid "All Campingsites"
+msgstr "Alle Campingplätze"
+
+#: post-types/trips.php:14
+msgid "All Trips"
+msgstr "Alle Ausflüge"
+
+#: taxonomies/locations.php:12
+msgid "Alle Orte"
+msgstr ""
+
+#: post-types/campingsites.php:12 post-types/campingsites.php:13
+#: post-types/campingsites.php:36
+msgid "Campingsites"
+msgstr "Campingplätze"
+
+#: post-types/campingsites.php:19
+msgctxt "campingsites"
+msgid "Featured Image"
+msgstr "Gezeigtes Bild"
+
+#: post-types/campingsites.php:21
+msgctxt "campingsites"
+msgid "Remove featured image"
+msgstr "Angezeigtes Bild entfernen"
+
+#: post-types/campingsites.php:20
+msgctxt "campingsites"
+msgid "Set featured image"
+msgstr "Featured Image einstellen"
+
+#: post-types/campingsites.php:22
+msgctxt "campingsites"
+msgid "Use as featured image"
+msgstr "Als Titelbild verwenden"
+
+#: post-types/campingsites.php:15
+msgid "Campingsites Archives"
+msgstr "Campingplätze Archiv"
+
+#: post-types/campingsites.php:16
+msgid "Campingsites Attributes"
+msgstr "Campingplätze Attribute"
+
+#. %s: post permalink
+#: post-types/campingsites.php:94
+#, php-format
+msgid ""
+"Campingsites draft updated. <a target=\"_blank\" href=\"%s\">Preview "
+"Campingsites</a>"
+msgstr ""
+"Campingsites Entwurf aktualisiert. <a target=\"_blank\" href=\"%s\">Vorschau "
+"Campingsites</a>"
+
+#: post-types/campingsites.php:25
+msgid "Campingsites list"
+msgstr "Campingplätze Liste"
+
+#: post-types/campingsites.php:24
+msgid "Campingsites list navigation"
+msgstr "Campingplätze Liste Navigation"
+
+#. %s: post permalink
+#: post-types/campingsites.php:87
+#, php-format
+msgid "Campingsites published. <a href=\"%s\">View Campingsites</a>"
+msgstr "Campingsites veröffentlicht. <a href=\"%s\">Campingplätze ansehen</a>"
+
+#. %s: date and time of the revision
+#: post-types/campingsites.php:85
+#, php-format
+msgid "Campingsites restored to revision from %s"
+msgstr "Campingplätze in der Revision von %s wiederhergestellt"
+
+#: post-types/campingsites.php:88
+msgid "Campingsites saved."
+msgstr "Campingsites gerettet."
+
+#. 1: Publish box date format, see https://secure.php.net/date 2: Post permalink
+#: post-types/campingsites.php:92
+#, php-format
+msgid ""
+"Campingsites scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" "
+"href=\"%2$s\">Preview Campingsites</a>"
+msgstr ""
+"Campingsites geplant für: <strong>%1$s</strong>. <a target=\"_blank\" "
+"href=\"%2$s\">Vorschau Campingsites</a>"
+
+#. %s: post permalink
+#: post-types/campingsites.php:90
+#, php-format
+msgid ""
+"Campingsites submitted. <a target=\"_blank\" href=\"%s\">Preview "
+"Campingsites</a>"
+msgstr ""
+"Campingsites eingereicht. <a target=\"_blank\" href=\"%s\">Vorschau "
+"Campingsites</a>"
+
+#: post-types/campingsites.php:83
+msgid "Campingsites updated."
+msgstr "Campingsites aktualisiert."
+
+#. %s: post permalink
+#: post-types/campingsites.php:80
+#, php-format
+msgid ""
+"Campingsites updated. <a target=\"_blank\" href=\"%s\">View Campingsites</a>"
+msgstr ""
+"Campingsites aktualisiert. <a target=\"_blank\" href=\"%s\">Campingplätze "
+"ansehen</a>"
+
+#: post-types/trips.php:82 post-types/campingsites.php:82
+msgid "Custom field deleted."
+msgstr "Benutzerdefiniertes Feld gelöscht."
+
+#: post-types/trips.php:81 post-types/campingsites.php:81
+msgid "Custom field updated."
+msgstr "Benutzerdefiniertes Feld aktualisiert."
+
+#: post-types/campingsites.php:29
+msgid "Edit Campingsites"
+msgstr "Campingsites bearbeiten"
+
+#: post-types/trips.php:29
+msgid "Edit Trips"
+msgstr "Trips bearbeiten"
+
+#: post-types/campingsites.php:23
+msgid "Filter Campingsites list"
+msgstr "Filter Campingplätze Liste"
+
+#: post-types/trips.php:23
+msgid "Filter Trips list"
+msgstr "Liste der Fahrten filtern"
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "https://splintnet.de"
+msgstr "https://splintnet.de"
+
+#: post-types/campingsites.php:17
+msgid "Insert into Campingsites"
+msgstr "In Campingsites einfügen"
+
+#: post-types/trips.php:17
+msgid "Insert into Trips"
+msgstr "In Trips einfügen"
+
+#: taxonomies/categories.php:28 taxonomies/categories.php:77
+msgid "Latitude"
+msgstr ""
+
+#: taxonomies/categories.php:32 taxonomies/categories.php:81
+msgid "Longitude"
+msgstr ""
+
+#: post-types/trips.php:92 post-types/campingsites.php:92
+msgid "M j, Y @ G:i"
+msgstr "M j, Y @ G:i"
+
+#. Description of the plugin
+msgid "Majo"
+msgstr "Majo"
+
+#: taxonomies/categories.php:18 taxonomies/categories.php:59
+msgid "Map"
+msgstr ""
+
+#: taxonomies/locations.php:17
+msgid "Neuen Ort hinzufügen"
+msgstr ""
+
+#: taxonomies/locations.php:18
+msgid "Neuer Ortsname"
+msgstr ""
+
+#: post-types/campingsites.php:26
+msgid "New Campingsites"
+msgstr "Neue Campingplätze"
+
+#: post-types/trips.php:26
+msgid "New Trips"
+msgstr "Neue Trips"
+
+#: post-types/campingsites.php:33
+msgid "No Campingsites found"
+msgstr "Keine Campingplätze gefunden"
+
+#: post-types/campingsites.php:34
+msgid "No Campingsites found in trash"
+msgstr "Keine Campingsites im Müll gefunden"
+
+#: post-types/trips.php:33
+msgid "No Trips found"
+msgstr "Keine Trips gefunden"
+
+#: post-types/trips.php:34
+msgid "No Trips found in trash"
+msgstr "Keine Trips im Papierkorb gefunden"
+
+#: taxonomies/locations.php:16
+msgid "Ort aktualisieren"
+msgstr ""
+
+#: taxonomies/locations.php:15
+msgid "Ort bearbeiten"
+msgstr ""
+
+#: taxonomies/locations.php:19
+msgid "Orte"
+msgstr ""
+
+#: taxonomies/locations.php:11
+msgid "Orte suchen"
+msgstr ""
+
+#: post-types/campingsites.php:35
+msgid "Parent Campingsites:"
+msgstr "Parent Campingsites:"
+
+#: post-types/trips.php:35
+msgid "Parent Trips:"
+msgstr "Elternausflüge:"
+
+#: post-types/campingsites.php:32
+msgid "Search Campingsites"
+msgstr "Campingsites suchen"
+
+#: post-types/trips.php:32
+msgid "Search Trips"
+msgstr "Trips suchen"
+
+#. Author of the plugin
+msgid "splintnet"
+msgstr "splintnet"
+
+#: taxonomies/locations.php:9
+msgctxt "taxonomy general name"
+msgid "Orte"
+msgstr ""
+
+#: taxonomies/locations.php:10
+msgctxt "taxonomy singular name"
+msgid "Ort"
+msgstr ""
+
+#. Name of the plugin
+msgid "Travelmap Connector"
+msgstr "Travelmap Connector"
+
+#: post-types/trips.php:12 post-types/trips.php:13 post-types/trips.php:36
+msgid "Trips"
+msgstr "Ausflüge"
+
+#: post-types/trips.php:19
+msgctxt "trips"
+msgid "Featured Image"
+msgstr "Gezeigtes Bild"
+
+#: post-types/trips.php:21
+msgctxt "trips"
+msgid "Remove featured image"
+msgstr "Angezeigtes Bild entfernen"
+
+#: post-types/trips.php:20
+msgctxt "trips"
+msgid "Set featured image"
+msgstr "Featured Image einstellen"
+
+#: post-types/trips.php:22
+msgctxt "trips"
+msgid "Use as featured image"
+msgstr "Als Titelbild verwenden"
+
+#: post-types/trips.php:15
+msgid "Trips Archives"
+msgstr "Trips Archiv"
+
+#: post-types/trips.php:16
+msgid "Trips Attributes"
+msgstr "Trips Attribute"
+
+#. %s: post permalink
+#: post-types/trips.php:94
+#, php-format
+msgid "Trips draft updated. <a target=\"_blank\" href=\"%s\">Preview Trips</a>"
+msgstr ""
+"Trips Entwurf aktualisiert. <a target=\"_blank\" href=\"%s\">Vorschau "
+"Trips</a>"
+
+#: post-types/trips.php:25
+msgid "Trips list"
+msgstr "Ausflugsliste"
+
+#: post-types/trips.php:24
+msgid "Trips list navigation"
+msgstr "Navigation in der Ausflugsliste"
+
+#. %s: post permalink
+#: post-types/trips.php:87
+#, php-format
+msgid "Trips published. <a href=\"%s\">View Trips</a>"
+msgstr "Trips veröffentlicht. <a href=\"%s\">Ausflüge ansehen</a>"
+
+#. %s: date and time of the revision
+#: post-types/trips.php:85
+#, php-format
+msgid "Trips restored to revision from %s"
+msgstr "Fahrten zur Revision von %s wiederhergestellt"
+
+#: post-types/trips.php:88
+msgid "Trips saved."
+msgstr "Gerettete Fahrten."
+
+#. 1: Publish box date format, see https://secure.php.net/date 2: Post permalink
+#: post-types/trips.php:92
+#, php-format
+msgid ""
+"Trips scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" "
+"href=\"%2$s\">Preview Trips</a>"
+msgstr ""
+"Fahrten geplant für: <strong>%1$s</strong>. <a target=\"_blank\" "
+"href=\"%2$s\">Vorschau Fahrten</a>"
+
+#. %s: post permalink
+#: post-types/trips.php:90
+#, php-format
+msgid "Trips submitted. <a target=\"_blank\" href=\"%s\">Preview Trips</a>"
+msgstr ""
+"Eingereichte Trips. <a target=\"_blank\" href=\"%s\">Vorschau Reisen</a>"
+
+#: post-types/trips.php:83
+msgid "Trips updated."
+msgstr "Trips aktualisiert."
+
+#. %s: post permalink
+#: post-types/trips.php:80
+#, php-format
+msgid "Trips updated. <a target=\"_blank\" href=\"%s\">View Trips</a>"
+msgstr ""
+"Trips aktualisiert. <a target=\"_blank\" href=\"%s\">Fahrten ansehen</a>"
+
+#: post-types/campingsites.php:18
+msgid "Uploaded to this Campingsites"
+msgstr "Hochgeladen auf diese Campingsites"
+
+#: post-types/trips.php:18
+msgid "Uploaded to this Trips"
+msgstr "Hochgeladen auf diese Trips"
+
+#: post-types/campingsites.php:30 post-types/campingsites.php:31
+msgid "View Campingsites"
+msgstr "Campingsites ansehen"
+
+#: post-types/trips.php:30 post-types/trips.php:31
+msgid "View Trips"
+msgstr "Trips ansehen"
+
+#: taxonomies/locations.php:13
+msgid "Übergeordneter Ort"
+msgstr ""
+
+#: taxonomies/locations.php:14
+msgid "Übergeordneter Ort:"
+msgstr ""
