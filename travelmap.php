@@ -16,6 +16,10 @@
 
 define('TRAVELMAP_GOOGLE_MAPS_API_KEY', 'AIzaSyBMeRMnBG6oMZv0Hl_9VZI5QXN4_O65rCk');
 
+
+require('libs/rest.php');
+
+
 require('post-types/trips.php');
 require('post-types/campingsites.php');
 

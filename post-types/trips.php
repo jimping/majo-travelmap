@@ -6,16 +6,16 @@
 function trips_init()
 {
     register_post_type(
-        'trips',
+        'trip',
         [
             'labels'                => [
                 'name'                  => __('Trips', 'travelmap'),
-                'singular_name'         => __('Trips', 'travelmap'),
+                'singular_name'         => __('Trip', 'travelmap'),
                 'all_items'             => __('All Trips', 'travelmap'),
                 'archives'              => __('Trips Archives', 'travelmap'),
                 'attributes'            => __('Trips Attributes', 'travelmap'),
                 'insert_into_item'      => __('Insert into Trips', 'travelmap'),
-                'uploaded_to_this_item' => __('Uploaded to this Trips', 'travelmap'),
+                'uploaded_to_this_item' => __('Uploaded to this Trip', 'travelmap'),
                 'featured_image'        => _x('Featured Image', 'trips', 'travelmap'),
                 'set_featured_image'    => _x('Set featured image', 'trips', 'travelmap'),
                 'remove_featured_image' => _x('Remove featured image', 'trips', 'travelmap'),
@@ -23,16 +23,16 @@ function trips_init()
                 'filter_items_list'     => __('Filter Trips list', 'travelmap'),
                 'items_list_navigation' => __('Trips list navigation', 'travelmap'),
                 'items_list'            => __('Trips list', 'travelmap'),
-                'new_item'              => __('New Trips', 'travelmap'),
+                'new_item'              => __('New Trip', 'travelmap'),
                 'add_new'               => __('Add New', 'travelmap'),
-                'add_new_item'          => __('Add New Trips', 'travelmap'),
-                'edit_item'             => __('Edit Trips', 'travelmap'),
-                'view_item'             => __('View Trips', 'travelmap'),
+                'add_new_item'          => __('Add New Trip', 'travelmap'),
+                'edit_item'             => __('Edit Trip', 'travelmap'),
+                'view_item'             => __('View Trip', 'travelmap'),
                 'view_items'            => __('View Trips', 'travelmap'),
                 'search_items'          => __('Search Trips', 'travelmap'),
                 'not_found'             => __('No Trips found', 'travelmap'),
                 'not_found_in_trash'    => __('No Trips found in trash', 'travelmap'),
-                'parent_item_colon'     => __('Parent Trips:', 'travelmap'),
+                'parent_item_colon'     => __('Parent Trip:', 'travelmap'),
                 'menu_name'             => __('Trips', 'travelmap'),
             ],
             'public'                => true,
@@ -74,7 +74,7 @@ function trips_updated_messages($messages)
 
     $permalink = get_permalink($post);
 
-    $messages['trips'] = [
+    $messages['trip'] = [
         0  => '', // Unused. Messages start at index 1.
         /* translators: %s: post permalink */
         1  => sprintf(__('Trips updated. <a target="_blank" href="%s">View Trips</a>', 'travelmap'), esc_url($permalink)),
@@ -100,18 +100,18 @@ function trips_updated_messages($messages)
 add_filter('post_updated_messages', 'trips_updated_messages');
 
 /**
- * Sets the bulk post updated messages for the `trips` post type.
+ * Sets the bulk post updated messages for the `trip` post type.
  *
  * @param  array $bulk_messages Arrays of messages, each keyed by the corresponding post type. Messages are
  *                              keyed with 'updated', 'locked', 'deleted', 'trashed', and 'untrashed'.
  * @param  int[] $bulk_counts   Array of item counts for each message, used to build internationalized strings.
- * @return array Bulk messages for the `trips` post type.
+ * @return array Bulk messages for the `trip` post type.
  */
 function trips_bulk_updated_messages($bulk_messages, $bulk_counts)
 {
     global $post;
 
-    $bulk_messages['trips'] = [
+    $bulk_messages['trip'] = [
         /* translators: %s: Number of Trips. */
         'updated'   => _n('%s Trips updated.', '%s Trips updated.', $bulk_counts['updated'], 'travelmap'),
         'locked'    => (1 === $bulk_counts['locked']) ? __('1 Trips not updated, somebody is editing it.', 'travelmap') :

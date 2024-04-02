@@ -29,7 +29,7 @@ function register_location_taxonomy()
         'show_in_rest'		=> true, // Wichtig für Gutenberg-Editor
     );
 
-    register_taxonomy('location', array('trips', 'campingsites', 'post'), $args);
+    register_taxonomy('location', array('trip', 'campingsite', 'post'), $args);
 }
 
 
