@@ -48,12 +48,17 @@ function get_rest_query_for_post_type($post_type, $request)
             return $location;
         }, $locations);
 
+        $post_meta = array_map(function ($meta) {
+            return maybe_unserialize($meta[0]);
+        }, $post_meta);
+
         $entry = array(
             'id' => $post->ID,
             'link' => get_permalink($post->ID),
             'teaser' => get_the_excerpt($post->ID),
             'title' => $post->post_title,
             'image' => $thumbnailSizes,
+            'meta' => $post_meta,
             'locations' => $locations_data,
         );
 
